@@ -12,6 +12,9 @@ A small framework developed in C++.
 - For now, this framework's business logic code is not been implemented yet. As, this is just for my test purpose.
 - Will plan to implement and extend this framework if neccessary.
 - [Place here](https://github.com/pixma/testwork/tree/master/cardeal/project/Application) the DLL so generated so your application, console or Win32 shall access the DLL.
+- Please download this as zip [from here](https://github.com/pixma/testwork/blob/master/cardeal/cardeal.zip)
+
+-----
 
 ### Self explainatory
 - I have tried to keep this framework as simple as i can.An example [from here](https://github.com/pixma/testwork/blob/master/cardeal/project/Application/main.cpp) explains the rest of the structure in Framework.
