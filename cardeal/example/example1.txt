@@ -1,0 +1,51 @@
+
+
+
+#includes goes here
+
+void main(){
+	
+
+	CarDealer car = new CarDealer('module', 'car');
+
+	CarDealCategory category;
+	ZeroMemory(category);
+
+	CarDealProperty property;
+	ZeroMemory(property);
+
+	//code goes here for creating new category and property.
+	category.name = "<Name>";
+	category.Id = "some id goes here";
+	category.parent = null;
+
+	CarDealPropertyValue propertyValue;
+	propertyValue.addValue( 0, 'Value');
+	propertyValue.addValue( 1, 'Value');
+
+	property.name = "<PropertyName>";
+	property.Id = "<some id goes here>";
+	property.value = propertyValue;
+	property.InCategory(category);
+	//
+
+	car.createNewCategory(category);
+	car.createNewProperty(property);
+
+	ZeroMemory(category);
+	category = car.getCategoryByName('categoryName');
+	category.name = "";//can change name of category;
+	car.setCategory(category);
+
+	ZeroMemory(property);
+	property = car.getPropertyByName(category,'propertyName');
+	property.name = "";//can change the name;
+
+	ZeroMemory(propertyValue);
+	propertyValue = property.value;
+	propertyValue.setValue( 0, "NewValue");
+
+	property.udateValue(propertyValue);
+	car.updateProperty(property);
+
+}
